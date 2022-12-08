@@ -1,2 +1,15 @@
-# Site-RealPizza
-Projeto com o intuito de colocar meu aprendizado com a linguagem JavaScript.
+<h1 align="center"><b>Real Pizza</b></h1>
+
+## Sobre: 
+
+Projeto criado com o intuito de colocar meu aprendizado com a linguagem JavaScript.
+
+## Tecnologias:
+
+- ✅ HTML
+- ✅ CSS
+- ✅ JavaScript
+
+## Autor:
+
+- [Vitor Lima](https://github.com/vitorlima4)
