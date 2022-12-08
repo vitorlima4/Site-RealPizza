@@ -1,0 +1,37 @@
+#div-sobre{
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#div-left img{
+    width: 500px;
+    border-radius: 5%;
+}
+
+#div-right h2{
+    color: #f5ab18ff;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+#div-right p{
+    font-size: 1rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+@media (min-width: 925px){
+    #div-sobre{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #div-right{
+        width: 50%;
+    }
+}
