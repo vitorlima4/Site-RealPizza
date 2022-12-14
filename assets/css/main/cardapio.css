@@ -47,6 +47,16 @@
 /*Menu Ativo*/
 .ativo-menu{
     display: block;
+    animation: animacaoLista 2s;
+}
+
+@keyframes animacaoLista{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .menu-list ul{

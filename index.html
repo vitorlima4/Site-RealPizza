@@ -21,7 +21,7 @@
                 <h1>Real Pizza</h1>
             </div>
 
-            <div id="nav-menu" class="nav-menu js-menu">
+            <div id="nav-menu" class="nav-menu" data-menu="menuHambuguer">
                 <ul id="nav-list">
                     <li id="nav-item"><a href="#home" class="nav-links">Home</a></li>
                     <li id="nav-item"><a href="#sobre" class="nav-links">Sobre</a></li>
@@ -30,12 +30,12 @@
                     <li id="nav-item"><a href="#login" class="nav-links">Login</a></li>
                 </ul>
 
-                <div id="nav-close" class="js-close">
+                <div id="nav-close" data-close="fechar">
                     <i class='bx bx-x'></i>
                 </div>
             </div>
 
-            <div id="nav-toggle" class="js-toggle">
+            <div id="nav-toggle" data-toggle="alternar">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
@@ -67,11 +67,11 @@
             <div id="div-cardapio">
                 <h2>Cardápio</h2>
                 <div class="menu-cardapio">
-                    <div class="menu-btn js-menuBtn">
+                    <div class="menu-btn" data-cardapio-botao="botao">
                         <p>Bebibas</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list js-menuList">
+                    <div class="menu-list" data-cardapio-lista="lista">
                         <ul>
                             <li>Água Mineral c/ Gás</li>
                             <li>Água Mineral s/ Gás</li>
@@ -85,11 +85,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn js-menuBtn">
+                    <div class="menu-btn" data-cardapio-botao="botao">
                         <p>Pizzas</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list js-menuList">
+                    <div class="menu-list" data-cardapio-lista="lista">
                         <ul>
                             <li>Presunto</li>
                             <li>Calabresa</li>
@@ -105,11 +105,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn js-menuBtn">
+                    <div class="menu-btn" data-cardapio-botao="botao">
                         <p>Hambúrguer</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list js-menuList">
+                    <div class="menu-list" data-cardapio-lista="lista">
                         <ul>
                             <li>X-Tradicional</li>
                             <li>X-Burguer</li>
@@ -125,11 +125,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn js-menuBtn">
+                    <div class="menu-btn" data-cardapio-botao="botao">
                         <p>Porções</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list js-menuList">
+                    <div class="menu-list" data-cardapio-lista="lista">
                         <ul>
                             <li>Batata Frita</li>
                             <li>Batata Frita GG</li>
@@ -145,7 +145,7 @@
         <section id="faq">
             <div id="div-faq">
                 <h2>Perguntas Frequentes</h2>
-                <dl id="list-faq" class="js-faqList">
+                <dl id="list-faq" data-faq-lista="lista">
                     <dt class="titulo-faq">Quais são os endereços, telefones e horário de funcionamento?</dt>
                     <dd class="descricao-faq">Todas essas informações você encontra na parte de contatos.</dd>
                     <dt class="titulo-faq">Quais são as formas de pagamento aceitas?</dt>
@@ -181,6 +181,6 @@
         <p>&copy; Desenvolvido por <a href="https://github.com/vitorlima4" target="_blank">Vitor Lima</a> - 2022</p>
     </footer>
     
-    <script src="assets/javascript/script.js"></script>
+    <script type="module" src="assets/javascript/script.js"></script>
 </body>
 </html>
