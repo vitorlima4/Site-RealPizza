@@ -1,5 +1,5 @@
 header{
-    background-color: #f5ab18ff;
+    background-image: linear-gradient(to bottom right, var(--color-orange), var(--color-yellow));
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
     width: 100%;
     position: fixed;
@@ -17,7 +17,7 @@ header{
 
 @media (max-width: 769px){
     .nav-menu{
-        background-color:#f5ab18ff ;
+        background-image: linear-gradient(to bottom right, var(--color-orange), var(--color-yellow));
         box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
         width: 100%;
         padding: 2rem;
@@ -47,23 +47,37 @@ header{
 }
 
 .nav-links{
-    color: #000;
+    color: var(--color-dark);
     text-transform: uppercase;
 }
 
 .bx-menu, .bx-x{
-    font-size: 2rem;
+    font-size: var(--fs-h1);
     cursor: pointer;
 }
 
-@media (min-width: 770px){
+.nav-links:hover, .bx-menu:hover, .bx-x:hover{
+    color: var(--color-dark-light);
+}
 
+@media (min-width: 770px){
     #nav-header{
         justify-content: space-around;
     }
 
     #nav-list{
         flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-links{
+        color: var(--color-dark);
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+
+    .nav-links:hover{
+        background-color: var(--color-pink);
     }
 
     #nav-toggle, #nav-close{

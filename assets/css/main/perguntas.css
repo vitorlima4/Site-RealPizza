@@ -6,11 +6,6 @@
     gap: 1rem;
 }
 
-#div-faq h2{
-    color: #f5ab18ff;
-    font-size: 1.7rem;
-}
-
 /* Perguntas */
 #list-faq{
     width: 70vw;
@@ -28,7 +23,7 @@
     width: 20px;
     height: 10px;
     margin-right: 10px;
-    background-color: #f5ab18ff;
+    background-color: var(--color-yellow);
 }
 
 .descricao-faq{

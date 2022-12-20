@@ -1,6 +1,7 @@
 @import './global/global.css';
 @import './header/header.css';
 @import './main/home.css';
+@import './main/mainContainer.css';
 @import './main/sobre.css';
 @import './main/cardapio.css';
 @import './main/perguntas.css';

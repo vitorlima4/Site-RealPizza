@@ -1,9 +1,9 @@
 footer{
     text-align: center;
-    background-color: #f5ab18ff;
+    background-image: linear-gradient(to top left, var(--color-orange), var(--color-yellow));
     padding: 1.1rem 0;
 }
 
 footer p a{
-    color: #fff;
+    color: var(--color-light);
 }

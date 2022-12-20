@@ -13,14 +13,10 @@
 }
 
 #div-right h2{
-    color: #f5ab18ff;
     text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
 }
 
 #div-right p{
-    font-size: 1rem;
     text-indent: 3rem;
     text-align: justify;
 }

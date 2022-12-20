@@ -7,7 +7,7 @@
 }
 
 #div-home{
-    color: #f5ab18ff;
+    color: var(--color-yellow);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,17 +16,9 @@
     gap: .6rem;
 }
 
-#div-home h1{
-    font-size: 1.7rem;
-}
-
-#div-home p{
-    font-size: 1.4rem;
-}
-
 #div-home a{
-    color: #fff;
-    background-color: #f5ab18ff;
+    color: var(--color-pink);
+    background-image: linear-gradient(to bottom right, var(--color-orange), var(--color-yellow));
     text-transform: uppercase;
     padding: .5rem 1rem;
     border-radius: .5rem;

@@ -6,14 +6,8 @@
     align-items: center;
 }
 
-#div-cardapio h2{
-    color: #f5ab18ff;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
-
 .menu-cardapio{
-    background-color: #fff;
+    background-color: var(--color-light);
     width: 70%;
     margin-bottom: .2rem;
     border-radius: 1rem;
@@ -31,12 +25,8 @@
     cursor: pointer;
 }
 
-.menu-btn p{
-    font-size: 1.1rem;
-}
-
 .icon-menu{
-    font-size: .7rem;
+    font-size: var(--fs-sm);
 }
 
 .menu-list{
@@ -47,7 +37,7 @@
 /*Menu Ativo*/
 .ativo-menu{
     display: block;
-    animation: animacaoLista 2s;
+    animation: animacaoLista 1s;
 }
 
 @keyframes animacaoLista{
