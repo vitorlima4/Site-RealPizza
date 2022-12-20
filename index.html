@@ -27,7 +27,7 @@
                     <li id="nav-item"><a href="#sobre" class="nav-links">Sobre</a></li>
                     <li id="nav-item"><a href="#cardapio" class="nav-links">Cardápio</a></li>
                     <li id="nav-item"><a href="#contato" class="nav-links">Contato</a></li>
-                    <li id="nav-item"><a href="#login" class="nav-links">Login</a></li>
+                    <li id="nav-item"><a href="#login" class="nav-links" data-modal="abrirModal">Login</a></li>
                 </ul>
 
                 <div id="nav-close" data-close="fechar">
@@ -168,9 +168,9 @@
                     <ul id="lista-info">
                         <li class="item-info">realpizza@gmail.com</li>
                         <li class="item-info">+55 (86) 99999-9999</li>
-                        <li class="item-info">Rua Balacobaco, Nº 2411</li>
+                        <li class="item-info">Rua Uruguai, Nº 2411</li>
                         <li class="item-info">Teresina - Piauí - Brasil</li>
-                        <li class="item-info">Seg à Dom das 18:00 às 22:40</li>
+                        <li class="item-info" data-horario="17, 23">Seg à Dom das 17:00 às 23:00 <span id="informacao"></span></li>
                     </ul>
                 </div>
             </div>
@@ -180,6 +180,19 @@
     <footer>
         <p>&copy; Desenvolvido por <a href="https://github.com/vitorlima4" target="_blank">Vitor Lima</a> - 2022</p>
     </footer>
+
+    <section class="modal" data-modal="containerModal">
+        <div id="div-modal">
+            <i class='bx bx-x' data-modal="fecharModal" id="close-modal"></i>
+            <form id="modal-form">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
     
     <script type="module" src="assets/javascript/script.js"></script>
 </body>
