@@ -12,6 +12,11 @@
     <!-- Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- JavaScript-->
+    <script>
+        document.documentElement.className += ' js';
+    </script>
+
 </head>
 <body>
     <header>
@@ -50,7 +55,7 @@
             </div>       
         </section>
 
-        <section id="sobre" class="main-container">
+        <section id="sobre" class="main-container" data-animacao="scroll">
             <div id="div-sobre">
                 <div id="div-left">
                     <img src="assets/imagens/img-sobre.jpg" alt="Imagem sobre">
@@ -63,15 +68,15 @@
             </div>
         </section>
 
-        <section id="cardapio" class="main-container">
+        <section id="cardapio" class="main-container" data-animacao="scroll">
             <div id="div-cardapio">
                 <h2>Cardápio</h2>
                 <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio-botao="botao">
+                    <div class="menu-btn" data-cardapio="botao">
                         <p>Bebibas</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list" data-cardapio-lista="lista">
+                    <div class="menu-list" data-cardapio="lista">
                         <ul>
                             <li>Água Mineral c/ Gás</li>
                             <li>Água Mineral s/ Gás</li>
@@ -85,11 +90,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio-botao="botao">
+                    <div class="menu-btn" data-cardapio="botao">
                         <p>Pizzas</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list" data-cardapio-lista="lista">
+                    <div class="menu-list" data-cardapio="lista">
                         <ul>
                             <li>Presunto</li>
                             <li>Calabresa</li>
@@ -105,11 +110,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio-botao="botao">
+                    <div class="menu-btn" data-cardapio="botao">
                         <p>Hambúrguer</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list" data-cardapio-lista="lista">
+                    <div class="menu-list" data-cardapio="lista">
                         <ul>
                             <li>X-Tradicional</li>
                             <li>X-Burguer</li>
@@ -125,11 +130,11 @@
                 </div>
 
                 <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio-botao="botao">
+                    <div class="menu-btn" data-cardapio="botao">
                         <p>Porções</p>
                         <i class='bx bxs-down-arrow icon-menu'></i>
                     </div>
-                    <div class="menu-list" data-cardapio-lista="lista">
+                    <div class="menu-list" data-cardapio="lista">
                         <ul>
                             <li>Batata Frita</li>
                             <li>Batata Frita GG</li>
@@ -142,10 +147,10 @@
             </div>
         </section>
 
-        <section id="faq" class="main-container">
+        <section id="faq" class="main-container" data-animacao="scroll">
             <div id="div-faq">
                 <h2>Perguntas Frequentes</h2>
-                <dl id="list-faq" data-faq-lista="lista">
+                <dl id="list-faq" data-faq="lista">
                     <dt class="titulo-faq">Quais são os endereços, telefones e horário de funcionamento?</dt>
                     <dd class="descricao-faq">Todas essas informações você encontra na parte de contatos.</dd>
                     <dt class="titulo-faq">Quais são as formas de pagamento aceitas?</dt>
@@ -158,7 +163,7 @@
             </div>
         </section>
 
-        <section id="contato" class="main-container">
+        <section id="contato" class="main-container" data-animacao="scroll">
             <div id="div-contato">
                 <h2>Entre em Contato</h2>
 

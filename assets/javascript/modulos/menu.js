@@ -5,43 +5,46 @@ export default function initMenu() {
         navToggle = document.querySelector('[data-toggle="alternar"]'),
         navLink = document.querySelectorAll('a[href^="#"]');
 
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-    })
 
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    })
+    if (navMenu && navClose && navToggle && navLink) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu');
+        })
 
-    //Remove menu com click no link
-    function removeMenu() {
-        navMenu.classList.remove('show-menu')
-    }
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+        })
 
-    navLink.forEach(item => {
-        item.addEventListener('click', removeMenu)
-    })
+        //Remove menu com click no link
+        function removeMenu() {
+            navMenu.classList.remove('show-menu')
+        }
 
-    //Scroll suave
-    function getScrollTopByHref(element) {
-        const id = element.getAttribute('href');
-        return document.querySelector(id).offsetTop;
-    }
+        navLink.forEach(item => {
+            item.addEventListener('click', removeMenu)
+        })
 
-    function scrollToPosition(to) {
-        window.scroll({
-            top: to,
-            behavior: "smooth",
+        //Scroll suave
+        function getScrollTopByHref(element) {
+            const id = element.getAttribute('href');
+            return document.querySelector(id).offsetTop;
+        }
+
+        function scrollToPosition(to) {
+            window.scroll({
+                top: to,
+                behavior: "smooth",
+            })
+        }
+
+        function scrollSuave(event) {
+            event.preventDefault();
+            const to = getScrollTopByHref(event.target) - 56;
+            scrollToPosition(to);
+        }
+
+        navLink.forEach(item => {
+            item.addEventListener('click', scrollSuave);
         })
     }
-
-    function scrollSuave(event) {
-        event.preventDefault();
-        const to = getScrollTopByHref(event.target) - 56;
-        scrollToPosition(to);
-    }
-
-    navLink.forEach(item => {
-        item.addEventListener('click', scrollSuave);
-    })
 }

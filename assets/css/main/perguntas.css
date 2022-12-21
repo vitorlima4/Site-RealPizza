@@ -30,20 +30,20 @@
     margin: 0 0 1rem 30px;
 }
 
-[data-faq-lista="lista"] dt::after{
+[data-faq="lista"] dt::after{
     content: '\25BC';
     margin-left: 10px;
 }
 
-[data-faq-lista="lista"] dt.ativa-lista::after{
+[data-faq="lista"] dt.ativa-lista::after{
     content: '\25B2';
 }
 
-[data-faq-lista="lista"] dd{
+.js [data-faq="lista"] dd{
     display: none;
 }
 
-[data-faq-lista="lista"] dd.ativa-lista{
+[data-faq="lista"] dd.ativa-lista{
     display: block;
     animation: animacaoLista 1s;
 }

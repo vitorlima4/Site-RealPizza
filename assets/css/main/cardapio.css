@@ -19,9 +19,14 @@
 .menu-btn{
     padding: 1rem 0;
     width: 100%;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-btn:hover{
+    background-color: var(--color-pink);
     cursor: pointer;
 }
 
@@ -29,13 +34,13 @@
     font-size: var(--fs-sm);
 }
 
-.menu-list{
+.js .menu-list{
     display: none;
     width: 100%;
 }
 
 /*Menu Ativo*/
-.ativo-menu{
+.js .ativo-menu{
     display: block;
     animation: animacaoLista 1s;
 }
