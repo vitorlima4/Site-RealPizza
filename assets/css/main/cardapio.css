@@ -1,63 +1,70 @@
-#div-cardapio{
-    padding: 2rem 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#div-cardapio {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menu-cardapio{
-    background-color: var(--color-light);
-    width: 70%;
-    margin-bottom: .2rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu-cardapio {
+  background-color: var(--color-light);
+  width: 70%;
+  margin-bottom: 0.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menu-btn{
-    padding: 1rem 0;
-    width: 100%;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu-btn {
+  padding: 1rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.menu-btn:hover{
-    background-color: var(--color-pink);
-    cursor: pointer;
+.icon-menu {
+  font-size: var(--fs-sm);
 }
 
-.icon-menu{
-    font-size: var(--fs-sm);
-}
-
-.js .menu-list{
-    display: none;
-    width: 100%;
+.js .menu-list {
+  display: none;
+  width: 100%;
 }
 
 /*Menu Ativo*/
-.js .ativo-menu{
-    display: block;
-    animation: animacaoLista 1s;
+.js .ativo-menu {
+  display: block;
+  animation: animacaoLista 1s;
 }
 
-@keyframes animacaoLista{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes animacaoLista {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.menu-list ul{
-    padding: 1rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 1rem;
+.menu-list ul {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.menu-itens {
+  width: 220px;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-itens img {
+  width: 85px;
+  border-radius: 4px;
 }

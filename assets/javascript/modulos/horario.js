@@ -1,16 +1,20 @@
-export default function initHorario(){
+export default function initHorario() {
+  const funcionamento = document.querySelector("[data-horario]");
+  const horarioFuncionamento = funcionamento.dataset.horario
+    .split(",")
+    .map(Number);
+  const entradaFuncionamento = document.querySelector("#informacao");
 
-    const funcionamento = document.querySelector('[data-horario]');
-    const horarioFuncionamento = funcionamento.dataset.horario.split(',').map(Number);
-    const entradaFuncionamento = document.querySelector('#informacao');
+  if (funcionamento && horarioFuncionamento && entradaFuncionamento) {
+    const horarioAgora = new Date().getHours();
 
-    if(funcionamento && horarioFuncionamento && entradaFuncionamento){
-        const horarioAgora = new Date().getHours();
-    
-        if(horarioAgora >= horarioFuncionamento[0] && horarioAgora < horarioFuncionamento[1]){
-            entradaFuncionamento.innerHTML = `(Aberto)`
-        }else{
-            entradaFuncionamento.innerHTML = `(Fechado)`
-        }
+    if (
+      horarioAgora >= horarioFuncionamento[0] &&
+      horarioAgora < horarioFuncionamento[1]
+    ) {
+      entradaFuncionamento.innerHTML = `(Aberto)`;
+    } else {
+      entradaFuncionamento.innerHTML = `(Fechado)`;
     }
+  }
 }

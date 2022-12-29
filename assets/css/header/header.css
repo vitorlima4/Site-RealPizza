@@ -5,7 +5,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 #nav-header{
@@ -60,6 +60,33 @@ header{
 .nav-links:hover, .bx-menu:hover, .bx-x:hover{
     color: var(--color-dark-light);
 }
+
+/* Dropdown Menu
+
+DESENVOLVENDO O MENU DROPDOWN
+
+[data-dropdown]{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color: var(--color-yellow);
+    top: 41px;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+[data-dropdown] .dropdown-menu{
+    display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown].ativo-dropdown .dropdown-menu{
+    display: block;
+}
+
+*/
 
 @media (min-width: 770px){
     #nav-header{

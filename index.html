@@ -1,204 +1,443 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Pizza</title>
 
     <!-- CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- JavaScript-->
     <script>
-        document.documentElement.className += ' js';
+      document.documentElement.className += " js";
     </script>
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
-        <nav id="nav-header">
+      <nav id="nav-header">
+        <div id="nav-logo">
+          <h1>Real Pizza</h1>
+        </div>
 
-            <div id="nav-logo">
-                <h1>Real Pizza</h1>
-            </div>
+        <div id="nav-menu" class="nav-menu" data-menu="menuHambuguer">
+          <ul id="nav-list">
+            <li id="nav-item"><a href="#home" class="nav-links">Home</a></li>
+            <li id="nav-item" data-dropdown>
+              <a href="#sobre" class="nav-links">Sobre</a>
+            </li>
+            <li id="nav-item">
+              <a href="#cardapio" class="nav-links">Cardápio</a>
+            </li>
+            <li id="nav-item">
+              <a href="#contato" class="nav-links">Contato</a>
+            </li>
+            <li id="nav-item">
+              <a href="#login" class="nav-links" data-modal="abrirModal"
+                >Login</a
+              >
+            </li>
+          </ul>
 
-            <div id="nav-menu" class="nav-menu" data-menu="menuHambuguer">
-                <ul id="nav-list">
-                    <li id="nav-item"><a href="#home" class="nav-links">Home</a></li>
-                    <li id="nav-item"><a href="#sobre" class="nav-links">Sobre</a></li>
-                    <li id="nav-item"><a href="#cardapio" class="nav-links">Cardápio</a></li>
-                    <li id="nav-item"><a href="#contato" class="nav-links">Contato</a></li>
-                    <li id="nav-item"><a href="#login" class="nav-links" data-modal="abrirModal">Login</a></li>
-                </ul>
+          <div id="nav-close" data-close="fechar">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
 
-                <div id="nav-close" data-close="fechar">
-                    <i class='bx bx-x'></i>
-                </div>
-            </div>
-
-            <div id="nav-toggle" data-toggle="alternar">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div id="nav-toggle" data-toggle="alternar">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="home">
-            <div id="div-home">
-                <h1>Bem-vindo ao Real Pizza!</h1>
-                <p>Conheça nosso cardápio!</p>
-                <a href="#cardapio">Cardápio</a>
-            </div>       
-        </section>
+      <section id="home">
+        <div id="div-home">
+          <h1>Bem-vindo ao Real Pizza!</h1>
+          <p>Conheça nosso cardápio!</p>
+          <a href="#cardapio">Cardápio</a>
+        </div>
+      </section>
 
-        <section id="sobre" class="main-container" data-animacao="scroll">
-            <div id="div-sobre">
-                <div id="div-left">
-                    <img src="assets/imagens/img-sobre.jpg" alt="Imagem sobre">
-                </div>
-                <div id="div-right">
-                    <h2>Sobre Nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, assumenda nesciunt modi porro quae laboriosam accusamus asperiores velit reprehenderit beatae voluptatem deserunt dolorem omnis cupiditate aliquid sed pariatur nam minima.Est voluptas natus quae numquam, earum impedit corporis iure! Voluptatibus voluptatum fugiat aperiam, assumenda natus laboriosam a nobis iure eius, distinctio hic, perferendis libero asperiores rerum similique molestiae ut aliquam?
-                    Explicabo odio harum sed eius, enim sit vero.</p>
-                </div>
+      <section id="sobre" class="main-container" data-animacao="scroll">
+        <div id="div-sobre">
+          <div id="div-left">
+            <img src="assets/imagens/img-sobre.jpg" alt="Imagem sobre" />
+          </div>
+          <div id="div-right">
+            <h2>Sobre Nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              assumenda nesciunt modi porro quae laboriosam accusamus asperiores
+              velit reprehenderit beatae voluptatem deserunt dolorem omnis
+              cupiditate aliquid sed pariatur nam minima.Est voluptas natus quae
+              numquam, earum impedit corporis iure! Voluptatibus voluptatum
+              fugiat aperiam, assumenda natus laboriosam a nobis iure eius,
+              distinctio hic, perferendis libero asperiores rerum similique
+              molestiae ut aliquam? Explicabo odio harum sed eius, enim sit
+              vero.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cardapio" class="main-container" data-animacao="scroll">
+        <div id="div-cardapio">
+          <h2>Cardápio</h2>
+          <div class="menu-cardapio">
+            <div class="menu-btn" data-cardapio="botao">
+              <p>Bebibas</p>
+              <i class="bx bxs-down-arrow icon-menu"></i>
             </div>
-        </section>
-
-        <section id="cardapio" class="main-container" data-animacao="scroll">
-            <div id="div-cardapio">
-                <h2>Cardápio</h2>
-                <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio="botao">
-                        <p>Bebibas</p>
-                        <i class='bx bxs-down-arrow icon-menu'></i>
-                    </div>
-                    <div class="menu-list" data-cardapio="lista">
-                        <ul>
-                            <li>Água Mineral c/ Gás</li>
-                            <li>Água Mineral s/ Gás</li>
-                            <li>Água de Coco</li>
-                            <li>Refrigerante Lata</li>
-                            <li>Refrigerante 600ml</li>
-                            <li>Refrigerante 1l</li>
-                            <li>Suco</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio="botao">
-                        <p>Pizzas</p>
-                        <i class='bx bxs-down-arrow icon-menu'></i>
-                    </div>
-                    <div class="menu-list" data-cardapio="lista">
-                        <ul>
-                            <li>Presunto</li>
-                            <li>Calabresa</li>
-                            <li>Frango</li>
-                            <li>Balacubana</li>
-                            <li>Portuguesa</li>
-                            <li>Moda da Casa</li>
-                            <li>Nordestina</li>
-                            <li>Mexicana</li>
-                            <li>vegetariana</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio="botao">
-                        <p>Hambúrguer</p>
-                        <i class='bx bxs-down-arrow icon-menu'></i>
-                    </div>
-                    <div class="menu-list" data-cardapio="lista">
-                        <ul>
-                            <li>X-Tradicional</li>
-                            <li>X-Burguer</li>
-                            <li>X-Bacon</li>
-                            <li>X-Tudo</li>
-                            <li>X-Chedar</li>
-                            <li>X-Frango</li>
-                            <li>X-Salada</li>
-                            <li>X-Picanha</li>
-                            <li>X-Big Burguer</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="menu-cardapio">
-                    <div class="menu-btn" data-cardapio="botao">
-                        <p>Porções</p>
-                        <i class='bx bxs-down-arrow icon-menu'></i>
-                    </div>
-                    <div class="menu-list" data-cardapio="lista">
-                        <ul>
-                            <li>Batata Frita</li>
-                            <li>Batata Frita GG</li>
-                            <li>Batata Frita + Bacon</li>
-                            <li>Batata Frita + Cheddar</li>
-                            <li>Batata Frita + Carne de Sol Desfiada</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="menu-list" data-cardapio="lista">
+              <ul>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-garrafa-agua.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Água Mineral c/ Gás</h5>
+                    <span>R$ 3,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-garrafa-agua.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Água Mineral s/ Gás</h5>
+                    <span>R$ 3,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-agua-coco.jpg" alt="" />
+                  <div>
+                    <h5>Água de Coco</h5>
+                    <span>R$ 4,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-refrigerante.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Refrigerante Lata</h5>
+                    <span>R$ 5,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-refrigerante.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Refrigerante 1l</h5>
+                    <span>R$ 7,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-suco.jpg" alt="" />
+                  <div>
+                    <h5>Suco</h5>
+                    <span>R$ 6,50</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-        <section id="faq" class="main-container" data-animacao="scroll">
-            <div id="div-faq">
-                <h2>Perguntas Frequentes</h2>
-                <dl id="list-faq" data-faq="lista">
-                    <dt class="titulo-faq">Quais são os endereços, telefones e horário de funcionamento?</dt>
-                    <dd class="descricao-faq">Todas essas informações você encontra na parte de contatos.</dd>
-                    <dt class="titulo-faq">Quais são as formas de pagamento aceitas?</dt>
-                    <dd class="descricao-faq">Aceitamos cartões de débito, crédito e dinheiro.</dd>
-                    <dt class="titulo-faq">Existe algum benefício para aniversariante?</dt>
-                    <dd class="descricao-faq">Existe sim! Oferecemos um brigadeiro de colher para você comemorar essa data querida.</dd>
-                    <dt class="titulo-faq">Eu sou vegetariano, o que posso comer?</dt>
-                    <dd class="descricao-faq">Temos algumas opções de pizzas vegetarianas em nosso cardápio.</dd>
-                </dl>
+          <div class="menu-cardapio">
+            <div class="menu-btn" data-cardapio="botao">
+              <p>Pizzas</p>
+              <i class="bx bxs-down-arrow icon-menu"></i>
             </div>
-        </section>
-
-        <section id="contato" class="main-container" data-animacao="scroll">
-            <div id="div-contato">
-                <h2>Entre em Contato</h2>
-
-                <div id="info-contato">
-                    <img src="assets/imagens/img-mapa.png" alt="Mapa da pizzaria">
-
-                    <ul id="lista-info">
-                        <li class="item-info">realpizza@gmail.com</li>
-                        <li class="item-info">+55 (86) 99999-9999</li>
-                        <li class="item-info">Rua Uruguai, Nº 2411</li>
-                        <li class="item-info">Teresina - Piauí - Brasil</li>
-                        <li class="item-info" data-horario="17, 23">Seg à Dom das 17:00 às 23:00 <span id="informacao"></span></li>
-                    </ul>
-                </div>
+            <div class="menu-list" data-cardapio="lista">
+              <ul>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Presunto</h5>
+                    <span>R$ 20,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Calabresa</h5>
+                    <span>R$ 20,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Frango</h5>
+                    <span>R$ 20,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Balacubana</h5>
+                    <span>R$ 30,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Portuguesa</h5>
+                    <span>R$ 30,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Nordestina</h5>
+                    <span>R$ 30,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Mexicana</h5>
+                    <span>R$ 37,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img src="assets/imagens/cardapio/img-pizza.jpg" alt="" />
+                  <div>
+                    <h5>Vegetariana</h5>
+                    <span>R$ 38,00</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+
+          <div class="menu-cardapio">
+            <div class="menu-btn" data-cardapio="botao">
+              <p>Hambúrguer</p>
+              <i class="bx bxs-down-arrow icon-menu"></i>
+            </div>
+            <div class="menu-list" data-cardapio="lista">
+              <ul>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Tradicional</h5>
+                    <span>R$ 8,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Burguer</h5>
+                    <span>R$ 9,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Tudo</h5>
+                    <span>R$ 10,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Chedar</h5>
+                    <span>R$ 11,50</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Salada</h5>
+                    <span>R$ 10,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-hamburguer.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>X-Big</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu-cardapio">
+            <div class="menu-btn" data-cardapio="botao">
+              <p>Porções</p>
+              <i class="bx bxs-down-arrow icon-menu"></i>
+            </div>
+            <div class="menu-list" data-cardapio="lista">
+              <ul>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-batata-frita.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Batata Frita</h5>
+                    <span>R$ 5,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-batata-frita.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Batata Frita GG</h5>
+                    <span>R$ 10,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-batata-frita.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Batata Frita + Bacon</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                </li>
+                <li class="menu-itens">
+                  <img
+                    src="assets/imagens/cardapio/img-batata-frita.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <h5>Batata Frita + Carne de Sol Desfiada</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="main-container" data-animacao="scroll">
+        <div id="div-galeria">
+          <h2>Galeria de Fotos</h2>
+
+          <div id="slide-wrapper">
+            <ul id="slide-list">
+              <li><img src="assets/imagens/slide/img-slide01.jpg" alt=""></li>
+              <li><img src="assets/imagens/slide/img-slide02.jpg" alt=""></li>
+              <li><img src="assets/imagens/slide/img-slide03.jpg" alt=""></li>
+              <li><img src="assets/imagens/slide/img-slide04.jpg" alt=""></li>
+              <li><img src="assets/imagens/slide/img-slide05.jpg" alt=""></li>
+            </ul>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="main-container" data-animacao="scroll">
+        <div id="div-faq">
+          <h2>Perguntas Frequentes</h2>
+          <dl id="list-faq" data-faq="lista">
+            <dt class="titulo-faq">
+              Quais são os endereços, telefones e horário de funcionamento?
+            </dt>
+            <dd class="descricao-faq">
+              Todas essas informações você encontra na parte de contatos.
+            </dd>
+            <dt class="titulo-faq">
+              Quais são as formas de pagamento aceitas?
+            </dt>
+            <dd class="descricao-faq">
+              Aceitamos cartões de débito, crédito e dinheiro.
+            </dd>
+            <dt class="titulo-faq">
+              Existe algum benefício para aniversariante?
+            </dt>
+            <dd class="descricao-faq">
+              Existe sim! Oferecemos um brigadeiro de colher para você comemorar
+              essa data querida.
+            </dd>
+            <dt class="titulo-faq">Eu sou vegetariano, o que posso comer?</dt>
+            <dd class="descricao-faq">
+              Temos algumas opções de pizzas vegetarianas em nosso cardápio.
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <section id="contato" class="main-container" data-animacao="scroll">
+        <div id="div-contato">
+          <h2>Entre em Contato</h2>
+
+          <div id="info-contato">
+            <img src="assets/imagens/img-mapa.png" alt="Mapa da pizzaria" />
+
+            <ul id="lista-info">
+              <li class="item-info">realpizza@gmail.com</li>
+              <li class="item-info">+55 (86) 99999-9999</li>
+              <li class="item-info">Rua Uruguai, Nº 2411</li>
+              <li class="item-info">Teresina - Piauí - Brasil</li>
+              <li class="item-info" data-horario="17, 23">
+                Seg à Dom das 17:00 às 23:00 <span id="informacao"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; Desenvolvido por <a href="https://github.com/vitorlima4" target="_blank">Vitor Lima</a> - 2022</p>
+      <p>
+        &copy; Desenvolvido por
+        <a href="https://github.com/vitorlima4" target="_blank">Vitor Lima</a> -
+        2022
+      </p>
     </footer>
 
     <section class="modal" data-modal="containerModal">
-        <div id="div-modal">
-            <i class='bx bx-x' data-modal="fecharModal" id="close-modal"></i>
-            <form id="modal-form">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
+      <div id="div-modal">
+        <i class="bx bx-x" data-modal="fecharModal" id="close-modal"></i>
+        <form id="modal-form">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" />
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
     </section>
-    
+
     <script type="module" src="assets/javascript/script.js"></script>
-</body>
+  </body>
 </html>
