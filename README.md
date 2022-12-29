@@ -2,7 +2,7 @@
 
 ## Sobre: 
 
-Projeto criado com o intuito de colocar meu aprendizado com a linguagem JavaScript.
+Projeto criado com o intuito de colocar em pratica meu aprendizado com a linguagem JavaScript.
 
 ## Tecnologias:
 
